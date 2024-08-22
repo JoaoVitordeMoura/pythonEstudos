@@ -17,6 +17,12 @@ if n1 < n2:
     print(n2)
     print(n2)
     print(n1)
+else:
+    print(n2)
+    print(n1)
+    print(n1)
+    print(n2)
+
 
 #3
 
@@ -36,9 +42,9 @@ y3 = int(input("Digite o terceiro número: "))
 
 if y1 < y2 < y3:
     print(y1)
-if y2 < y1 < y3:
-    print(y2)
-if y3 < y1 < y2:
+elif y3 < y2 < y1:
     print(y3)
+else:
+    print(y2)
    
 
