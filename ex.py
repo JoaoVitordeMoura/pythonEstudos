@@ -1,4 +1,4 @@
-#1
+'''#1
 
 numero = int(input("Digite um número inteiro: "))
 
@@ -46,5 +46,59 @@ elif y3 < y2 < y1:
     print(y3)
 else:
     print(y2)
+
+#5
+
+atacado = 10.90
+varejo = 12.90
+uni = int(input("Digite o tanto de unidades: "))
+
+if uni >= 20:
+    print(uni * atacado)
+else:
+    print(uni * varejo)
+
+#6
+
+a = int(input("Digite o primeiro número inteiro: "))
+b = int(input("Digite o segundo número inteiro: "))
+
+if a % b == 0:
+    print("É multiplo")
+else:
+    print("Não é multiplo")'''
+
+#7
+
+str 
+vogais = "a" and "A" or "e" and "E" or "i" and "I" or "o" and "O" or "u" and "U"
+letra = str(input("Digite uma letra: "))
+
+if letra == vogais:
+    print("Vogal")
+else:
+    print("Consoante")
+
+#8
+
+dia = int(input("Digite um dia de número: "))
+
+match dia:
+    case 1:
+        print("Domingo")
+    case 2:
+        print("Segunda")
+    case 3:
+        print("Terça")
+    case 4:
+        print("Quarta")
+    case 5:
+        print("Quinta")
+    case 6:
+        print("Sexta")
+    case 7:
+        print("Sábado")
+    case _:
+        print("Inválido")                 
    
 
