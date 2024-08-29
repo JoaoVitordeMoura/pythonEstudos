@@ -70,7 +70,7 @@ else:
 
 #7
  
-vogais = "a" and "A" or "e" and "E" or "i" and "I" or "o" and "O" or "u" and "U"
+vogais = "a" or "A" and "e" or "E" and "i" or "I" and "o" or "O" and "u" or "U"
 letra = input("Digite uma letra: ")
 
 if letra == vogais:
@@ -112,7 +112,15 @@ precoMorango1 = 19.50
 precoMaca2 = 7.50
 precoMorango2 = 15.20
 
-if maca and morango <= 5:
+if morango <= 5 and maca > 5:
+    compra = (morango * precoMorango1) + (maca * precoMaca2)
+    if compra > 25:
+        print(compra - (compra * 0.10))
+elif maca <= 5 and morango > 5:
+    compra = (morango * precoMorango2) + (maca * precoMaca1)
+    if compra > 25:
+        print(compra - (compra * 0.10))
+elif maca and morango <= 5:
     compra = (morango * precoMorango1) + (maca * precoMaca1)
     if compra > 25:
         print(compra - (compra * 0.10))
@@ -124,14 +132,6 @@ elif maca and morango > 5:
         print(compra - (compra * 0.10))
     else:
         print(compra)
-elif morango <= 5:
-    compra = (morango * precoMorango1) + (maca * precoMaca2)
-    if compra > 25:
-        print(compra - (compra * 0.10))
-elif maca <= 5:
-    compra = (morango * precoMorango2) + (maca * precoMaca1)
-    if compra > 25:
-        print(compra - (compra * 0.10))
 
 
 #11
@@ -161,6 +161,27 @@ elif media < 4:
     if conceito == "E":
         print("Nota 1:" , n1 , "Nota 2:" , n2 , "Média:" , media , "Conceito:" , conceito , "Resultado:" , "REPROVADO")
     
+
+#12
+
+numero = int(input("Digite um número inteiro e de três dígitos: "))
+n3 = numero % 10
+numero = numero // 10
+n2 = numero % 10
+numero = numero // 10
+n1 = numero
+
+if n1 < n2 < n3:
+    print("Crescente!")
+else:
+    print("Decrescente!")
+
+#laço de repetição
+
+for i in range(0 , 10):
+    print(i)
+
+
 
 
 
