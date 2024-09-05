@@ -70,7 +70,7 @@ else:
 
 #7
  
-vogais = "a" or "A" and "e" or "E" and "i" or "I" and "o" or "O" and "u" or "U"
+'''vogais = "a" or "A" and "e" or "E" and "i" or "I" and "o" or "O" and "u" or "U"
 letra = input("Digite uma letra: ")
 
 if letra == vogais:
@@ -180,6 +180,142 @@ else:
 
 for i in range(0 , 10):
     print(i)
+
+s = "python"
+
+for s in str(s):
+    print(s)
+
+s = "python"
+
+for i, c in enumerate(s, 1):
+    print(i, c)
+
+x = int(input("Digite um número positivo: "))
+
+while x < 0:
+    x = int(input("Invalido, digite novamente: "))
+
+contador = 0
+
+while contador < 100:
+    print("Curso de python")
+    contador +=1
+print(contador)
+
+i = 0
+contador = 0
+
+while i < 10:
+    x = int(input("Digite um número: "))
+    if x >= 0:
+        contador += 1
+    i += 1    
+print(contador)
+
+s = "joao"
+
+for c in s:
+    if c == 'o':
+        continue
+    print(c)
+
+for i in range(10):
+    print(i)
+else:
+    print("Fim do laço")
+
+#ex laço de repetição
+
+#a
+for i in range(1 , 101):
+    print(i)
+
+#b
+for i in range(20 , 41):
+    print(i)
+
+#c
+
+soma = 0
+numero = 20
+
+while numero <= 40:
+    soma += numero
+    numero += 1
+    print(soma)
+
+#D
+
+soma1 = 0
+numero1 = -20
+
+while numero1 <= 10:
+    soma1 += numero1
+    numero1 += 1
+    print(soma1)
+
+#2A
+
+for i in range(1 , 51):
+    if i % 2 == 0:
+    
+        print(i)
+    else:
+        continue
+
+#2B
+
+for i in range(50 , 100):
+    if i % 2 == 0:
+        continue
+    print(i)
+
+#2C
+
+for i in range(1 , 100):
+    if i % 3 == 0:
+        print(i)
+    else:
+        continue
+
+#2D
+
+for i in range(50 , 200):
+    if i % 7 == 0:
+        print(i)
+    else:
+        continue
+
+
+#3A
+
+soma = 0
+numero = 50
+
+while numero <= 150:
+    soma += numero
+    numero += 2
+    print(soma)
+
+#3B
+
+for i in range(1 , 101):
+    if i % 3 == 0:
+        print(i)
+    elif i % 5 == 0:
+        print(i)
+    else:
+        continue'''
+
+#3C
+
+x = 1
+
+for i , c in enumerate(1 , 500):
+    if i % 5 == 0:
+        print(i)
+
 
 
 
