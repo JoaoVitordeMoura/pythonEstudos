@@ -361,21 +361,34 @@
 
 # 8
 
-idadeNova = 200
-idadeVelha = 0
-idade = int(input("Idade (idade negativa termina a leitura)"))
-while idade > 0:
-    idade = int(input("Idade (idade negativa termina a leitura)"))
-    if idade < idadeNova:
-        idadeNova = idade
-    if idade > idadeVelha:
-        idadeVelha = idade
-print("Nova: " , idadeNova)
-print("Velha: ", idadeVelha)
+# idadeNova = 200
+# idadeVelha = 0
+# idade = int(input("Idade (idade negativa termina a leitura)"))
+# while idade > 0:
+#     idade = int(input("Idade (idade negativa termina a leitura)"))
+#     if idade < idadeNova:
+#         idadeNova = idade
+#     if idade > idadeVelha:
+#         idadeVelha = idade
+# print("Nova: " , idadeNova)
+# print("Velha: ", idadeVelha)
 
 # 9
 
-# c = "python"
+# vogal = 0
+# consoante = 0
+
+# palavra = input("Digite uma palavra: ")
+# for i in enumerate(palavra , 1):
+#     if i == "a" or "e" or "i" or "o" or "u":
+#         vogal += 1
+#     else:
+#         consoante += 1
+
+# print(vogal , consoante)
+
+
+
 
 
 # 10
@@ -384,6 +397,26 @@ print("Velha: ", idadeVelha)
 
 # while n < 0:
 #     n = int(input("Número inválido, digite novamente: "))
+
+# fatorial = 1
+# for i in range(1 , n + 1):
+#     fatorial *= i
+# print("O fatorial de" , n , "é" , fatorial)
+
+
+#11
+
+n = int(input("Digite o tanto de interações para o cálculo: "))
+soma = 0
+
+while n < 0:
+    n = int(input("Digite novamente, o número tem que ser positivo: "))
+
+for i in range(1 , n + 1):
+    soma += 1/(i*(i + 1)/2)
+print(soma)
+
+
 
 
 
