@@ -406,15 +406,120 @@
 
 #11
 
-n = int(input("Digite o tanto de interações para o cálculo: "))
-soma = 0
+# n = int(input("Digite o tanto de interações para o cálculo: "))
+# soma = 0
 
-while n < 0:
-    n = int(input("Digite novamente, o número tem que ser positivo: "))
+# while n < 0:
+#     n = int(input("Digite novamente, o número tem que ser positivo: "))
 
-for i in range(1 , n + 1):
-    soma += 1/(i*(i + 1)/2)
-print(soma)
+# for i in range(1 , n + 1):
+#     soma += 1/(i*(i + 1)/2)
+# print(soma)
+
+#12tent
+
+# lucrototal = 0
+# preco = 5.0
+
+# for i in range(121):
+#     lucro = (i * preco) - 200
+#     if preco >= 1:
+#         preco -= 0.5
+        
+# print(preco)
+# print(lucro)
+
+#12res
+
+# preco = 5
+# qtd = 120
+# i = 1
+
+# while preco >= 1:
+
+#     lucro = qtd * preco - 200
+#     print("Preço do ingresso:" , preco)
+#     print("Quantidade de ingressos:" , qtd)
+#     print("Lucro máximo:" , lucro)
+#     preco = preco - 0.5
+#     qtd = qtd + i*26
+
+#13
+
+aprovado = 0
+reprovado = 0
+qtdaluno = 0
+mediaaprovado = 0
+mediarep = 0
+notageral = 0
+
+
+resp = int(input("Deseja ver a nota de um aluno?(1-Sim/2-Não): "))
+
+if resp != 1:
+    print("Obrigado até a próxima!")
+else:
+    while resp == 1:
+        if resp == 2:
+            break
+        qtdaluno += 1
+        n1 = float(input("Digite a nota da prova: "))
+        n2 = float(input("Digite a nota da atividade: "))
+
+        while n1 < 0 or n1 > 10:
+            n1 = float(input("Digite a nota da prova: "))
+        while n2 < 0 or n2 > 10:
+            n2 = float(input("Digite a nota da atividade: "))
+
+        media = (n1 + n2) / 2
+        print(media)
+
+        if media >= 7:
+            print("Aluno aprovado")
+            aprovado += 1
+            mediaaprovado += media
+            notageral += media
+        else:
+            print("Aluno reprovado")
+            reprovado += 1
+            mediarep += media
+            notageral += media
+
+        resp = int(input("Deseja ver a nota de mais um aluno?(1-Sim/2-Não): "))
+
+    print("Alunos aprovados:" , aprovado)
+    print("Alunos reprovados:" , reprovado)
+    perA = (aprovado * 100) / qtdaluno
+    perR = (reprovado * 100) / qtdaluno
+    print("Porcentagem de alunos aprovados: " , perA , "%")
+    print("Porcentagem de alunos reprovados: " , perR , "%")
+
+    if aprovado == 0:
+        mediaR = mediarep / reprovado
+        print("Média das notas dos reprovados:" , mediaR)
+    elif reprovado == 0:
+        mediaA = mediaaprovado / aprovado
+        print("Média das notas dos aprovados:" , mediaA)
+    else:
+        mediaA = mediaaprovado / aprovado
+        mediaR = mediarep / reprovado
+        print("Média das notas dos aprovados:" , mediaA)
+        print("Média das notas dos reprovados:" , mediaR)
+
+
+
+
+    mediaGeral = notageral / qtdaluno
+    print("Media geral dos alunos:" , mediaGeral)
+
+
+    
+
+
+
+
+
+
 
 
 
