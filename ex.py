@@ -446,71 +446,95 @@
 
 #13
 
-aprovado = 0
-reprovado = 0
-qtdaluno = 0
-mediaaprovado = 0
-mediarep = 0
-notageral = 0
+# aprovado = 0
+# reprovado = 0
+# qtdaluno = 0
+# mediaaprovado = 0
+# mediarep = 0
+# notageral = 0
 
 
-resp = int(input("Deseja ver a nota de um aluno?(1-Sim/2-Não): "))
+# resp = int(input("Deseja ver a nota de um aluno?(1-Sim/2-Não): "))
 
-if resp != 1:
-    print("Obrigado até a próxima!")
-else:
-    while resp == 1:
-        if resp == 2:
-            break
-        qtdaluno += 1
-        n1 = float(input("Digite a nota da prova: "))
-        n2 = float(input("Digite a nota da atividade: "))
+# if resp != 1:
+#     print("Obrigado até a próxima!")
+# else:
+#     while resp == 1:
+#         if resp == 2:
+#             break
+#         qtdaluno += 1
+#         n1 = float(input("Digite a nota da prova: "))
+#         n2 = float(input("Digite a nota da atividade: "))
 
-        while n1 < 0 or n1 > 10:
-            n1 = float(input("Digite a nota da prova: "))
-        while n2 < 0 or n2 > 10:
-            n2 = float(input("Digite a nota da atividade: "))
+#         while n1 < 0 or n1 > 10:
+#             n1 = float(input("Digite a nota da prova: "))
+#         while n2 < 0 or n2 > 10:
+#             n2 = float(input("Digite a nota da atividade: "))
 
-        media = (n1 + n2) / 2
-        print(media)
+#         media = (n1 + n2) / 2
+#         print(media)
 
-        if media >= 7:
-            print("Aluno aprovado")
-            aprovado += 1
-            mediaaprovado += media
-            notageral += media
-        else:
-            print("Aluno reprovado")
-            reprovado += 1
-            mediarep += media
-            notageral += media
+#         if media >= 7:
+#             print("Aluno aprovado")
+#             aprovado += 1
+#             mediaaprovado += media
+#             notageral += media
+#         else:
+#             print("Aluno reprovado")
+#             reprovado += 1
+#             mediarep += media
+#             notageral += media
 
-        resp = int(input("Deseja ver a nota de mais um aluno?(1-Sim/2-Não): "))
+#         resp = int(input("Deseja ver a nota de mais um aluno?(1-Sim/2-Não): "))
 
-    print("Alunos aprovados:" , aprovado)
-    print("Alunos reprovados:" , reprovado)
-    perA = (aprovado * 100) / qtdaluno
-    perR = (reprovado * 100) / qtdaluno
-    print("Porcentagem de alunos aprovados: " , perA , "%")
-    print("Porcentagem de alunos reprovados: " , perR , "%")
+#     print("Alunos aprovados:" , aprovado)
+#     print("Alunos reprovados:" , reprovado)
+#     perA = (aprovado * 100) / qtdaluno
+#     perR = (reprovado * 100) / qtdaluno
+#     print("Porcentagem de alunos aprovados: " , perA , "%")
+#     print("Porcentagem de alunos reprovados: " , perR , "%")
 
-    if aprovado == 0:
-        mediaR = mediarep / reprovado
-        print("Média das notas dos reprovados:" , mediaR)
-    elif reprovado == 0:
-        mediaA = mediaaprovado / aprovado
-        print("Média das notas dos aprovados:" , mediaA)
-    else:
-        mediaA = mediaaprovado / aprovado
-        mediaR = mediarep / reprovado
-        print("Média das notas dos aprovados:" , mediaA)
-        print("Média das notas dos reprovados:" , mediaR)
-
-
+#     if aprovado == 0:
+#         mediaR = mediarep / reprovado
+#         print("Média das notas dos reprovados:" , mediaR)
+#     elif reprovado == 0:
+#         mediaA = mediaaprovado / aprovado
+#         print("Média das notas dos aprovados:" , mediaA)
+#     else:
+#         mediaA = mediaaprovado / aprovado
+#         mediaR = mediarep / reprovado
+#         print("Média das notas dos aprovados:" , mediaA)
+#         print("Média das notas dos reprovados:" , mediaR)
 
 
-    mediaGeral = notageral / qtdaluno
-    print("Media geral dos alunos:" , mediaGeral)
+
+
+#     mediaGeral = notageral / qtdaluno
+#     print("Media geral dos alunos:" , mediaGeral)
+
+#14
+
+# n = int(input("Digite um número inteiro: "))
+# m = n
+# inverso = 0
+
+# while n > 0:
+#     inverso = inverso * 10 + n % 10
+#     n = n // 10
+
+# if inverso == m:
+#     print("Palíndromo")
+# else:
+#     print("Não é palíndromo")
+
+#15
+
+n = int(input("Digite um número: "))
+soma = 0
+
+while n > 0:
+    n = n % 10
+print(n)
 
 
     
