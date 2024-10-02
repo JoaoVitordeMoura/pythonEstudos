@@ -527,17 +527,23 @@
 # else:
 #     print("Não é palíndromo")
 
-#15
+# def soma(n1 , n2):
+#     s = n1 + n2
+#     return s
 
-n = int(input("Digite um número: "))
-soma = 0
+# r = soma(2 , 3)
+# print(r)
 
-while n > 0:
-    n = n % 10
-print(n)
+def soma():
+    n1 = int(input("N1: "))
+    n2 = int(input("N2: "))
+    s = n1 + n2
+    return s
 
 
-    
+
+
+
 
 
 
