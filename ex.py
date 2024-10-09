@@ -534,30 +534,69 @@
 # r = soma(2 , 3)
 # print(r)
 
-def soma():
-    n1 = int(input("N1: "))
-    n2 = int(input("N2: "))
-    s = n1 + n2
-    return s
+# def soma():
+#     n1 = int(input("N1: "))
+#     n2 = int(input("N2: "))
+#     s = n1 + n2
+#     return s
+# print(soma())
+
+# def calcSalario(salBase , valorH , qtdHoras):
+#     salBase = int(input("Digite o salário base: "))
+#     valorH = int(input("Digite o valor por hora extra: "))
+#     qtdHoras = int(input("Digite a quantidade de horas extras: "))
+#     salario = salBase + (valorH * qtdHoras)
+#     return salario
+# print(calcSalario(0 , 0 , 0))
+
+#print(round(1/3 , 2))
 
 
+import random
+import math
+
+# print(math.pi)
+# print(round(math.sqrt(87) , 2))
 
 
+# n1 = int(input("Digite o primeiro número: "))
+# n2 = int(input("Digite o segundo número: "))
 
+# print(random.randint(n1 , n2))
 
+# print(random.randint(1 , 20))
 
+#exercicios função
 
+#1
 
+# def soma(*numeros):
+#     soma = 0
+#     for i in numeros:
+#         soma += 1
+#         return soma
+# print(soma(1 , 2 , 3 , 4 , 5))
 
+#2
 
+# def media(numeros):
+#     return sum(numeros) / len(numeros)
+# l = [8 , 10 , 9]
+# print(media(l))
 
+#3
 
+def palindromo(s):
+    i = 0
+    j = len(s) - 1
+    while i < j:
+        if s[i] != s[j]:
+            return False 
+        i = i + 1
+        j = j - 1
+    return True
 
-
-
-
-
-
+print(palindromo("paralelepipedo"))
 
 
 
