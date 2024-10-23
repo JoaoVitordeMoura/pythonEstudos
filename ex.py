@@ -586,25 +586,35 @@ import math
 
 #3
 
-def palindromo(s):
-    i = 0
-    j = len(s) - 1
-    while i < j:
-        if s[i] != s[j]:
-            return False 
-        i = i + 1
-        j = j - 1
-    return True
+# def palindromo(s):
+#     s = s.lower()
+#     i = 0
+#     j = len(s) - 1
+#     while i < j:
+#         if s[i] != s[j]:
+#             return False
+#         i = i + 1
+#         j = j - 1
+#     return True
 
-print(palindromo("paralelepipedo"))
+# print(palindromo("Arara"))
 
+#1
 
+def tam():
+    palavra = input("Digite uma palavra: ")
+    cont = 0
+    for i in palavra:
+        cont += 1
+    print("O tamanho da palavra é de:" , cont , "letras")
+tam()
 
+#2
 
-
-
-
-
-
-
+def mult():
+    a = input("Digite uma palavra: ")
+    n = int(input("Digite um número: "))
+    m = a * n
+    print(m)
+mult()
 
