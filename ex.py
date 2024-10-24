@@ -601,20 +601,38 @@ import math
 
 #1
 
-def tam():
-    palavra = input("Digite uma palavra: ")
-    cont = 0
-    for i in palavra:
-        cont += 1
-    print("O tamanho da palavra é de:" , cont , "letras")
-tam()
+# def tam():
+#     palavra = input("Digite uma palavra: ")
+#     cont = 0
+#     for i in palavra:
+#         cont += 1
+#     print("O tamanho da palavra é de:" , cont , "letras")
+# tam()
 
-#2
+# #2
 
-def mult():
-    a = input("Digite uma palavra: ")
-    n = int(input("Digite um número: "))
-    m = a * n
-    print(m)
-mult()
+# def mult():
+#     a = input("Digite uma palavra: ")
+#     n = int(input("Digite um número: "))
+#     m = a * n
+#     print(m)
+# mult()
+
+# def nome():
+#     a = input("Digite seu nome completo: ").upper()
+#     b = a.split()
+#     iniciais = []
+#     for i in b:
+#         iniciais.append(i[0])    
+#     c = "".join(iniciais)
+#     print(c)
+# nome()
+
+def senha():
+    s = input("Digite sua senha (ela precisa de 8 caracteres, pelo menos uma letra maiúscula e uma minúscula e conter pelo menos um número): ")
+    tam = len(s)
+    while tam < 8:
+        s = input("Digite sua senha (ela precisa de 8 caracteres, pelo menos uma letra maiúscula e uma minúscula e conter pelo menos um número): ")
+senha()
+
 
